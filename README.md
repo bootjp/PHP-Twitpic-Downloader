@@ -3,7 +3,9 @@ PHP-Twitpic-Downloader
 
 Twitpic Downloader.
   
-PHP Version 5.3
+Use some unofficial API.
+    
+PHP Version 5.3 Over.
   
 Use ZIP, XML.
   
