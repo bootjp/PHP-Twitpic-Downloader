@@ -9,10 +9,11 @@ PHP Version 5.3 Over.
   
 Use ZIP, XML.
   
-$username   Type you Twitter screenname.
+$CLI_FLG    CLI mode is change to TRUE.
   
-$zipTmpDir  Temporary file directory. Permission 0777 
+$username   Type you Twitter screenname. No Type "@". Ex. @hogehoge is "hogehoge"; 
   
-$count      API LIMIT 20. countup to next page get.
+$zipTmpDir  Temporary file directory. Permission 777  Directory end "/" required. 
   
-In a little more, corresponding to the CLI.....maybe.
+$count      Count up to get next page. Twitpic side API LIMIT 20.
+  
