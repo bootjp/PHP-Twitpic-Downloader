@@ -1,9 +1,9 @@
 <?php
 error_reporting(-1);
-$CLI_FLG = FALSE; // CLI mode is change to TRUE.
-$username = "Type here you Twitter screenname";
-$TmpDir = './tmp/'; // Directory end "/" required. 
-
+$CLI_FLG = FALSE;                                 // CLI mode is change to TRUE.
+$username = "Type here you Twitter screenname";   // No Type "@". Ex. @hogehoge is "hogehoge";   
+$TmpDir = './tmp/';                               // Directory end "/" required. 
+$count = 1;                                       // Count up to get next page. Twitpic side API LIMIT 20.
 switch ($CLI_FLG) {
     case FALSE:
         $zip = new ZipArchive();
@@ -12,7 +12,7 @@ switch ($CLI_FLG) {
         if ($result !== true) {
             exit("FIle Open Error.");
         }
-        $count = 1;
+
         $xml = @file_get_contents("http://api.twitpic.com/2/users/show.xml?username={$username}&page{$count}");
         $xmlfile = new SimpleXMLElement($xml);
         foreach ($xmlfile->images->image as $row) {
