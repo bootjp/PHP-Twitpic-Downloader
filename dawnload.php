@@ -51,4 +51,7 @@ switch ($CLI_FLG) {
         }
         exit(0);
         break;
+    default:
+        exit('Exception!!');
+        break;
 }
