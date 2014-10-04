@@ -10,12 +10,12 @@ PHP Version 5.3 Over.
 Use ZIP, XML.
 
   --Check--
-# php -i | grep xml
+ # php -i | grep xml
 ：
 Simplexml support => enabled 
 ：
 OK
-# php -i | grep zip
+ # php -i | grep zip
 ：
 zip
 Libzip version => 0.10.1
