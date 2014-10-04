@@ -8,7 +8,20 @@ Use some unofficial API.
 PHP Version 5.3 Over.
   
 Use ZIP, XML.
-  
+
+  --Check--
+# php -i | grep xml
+：
+Simplexml support => enabled 
+：
+OK
+# php -i | grep zip
+：
+zip
+Libzip version => 0.10.1
+：
+OK
+  -- End --
 $CLI_FLG    CLI mode is change to TRUE.
   
 $username   Type you Twitter screenname. No Type "@". Ex. @hogehoge is "hogehoge"; 
